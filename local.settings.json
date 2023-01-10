@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsStorage-azure-main": "DefaultEndpointsProtocol=https;AccountName=applications01;AccountKey=/438OkgH9PgmzEw6jN1mWu5qcnyqxl/JXYP+YvFIVz5LKqBzxGWg4l4H1/TIOoMg2Niv/vCIPz8s+ASt8CZzFg==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "applicationsdb_DOCUMENTDB-azure-main": "AccountEndpoint=https://applications-db.documents.azure.com:443/;AccountKey=bh3wOBacFyYcMH8LE35qC2XmC9Pkl8ps5ZtjVIQsgBiu2kO8Nfs50XyrGN8alTOdNg0elfgarl4JACDbxk67Iw==;",
+    "applications01_STORAGE-azure-main": "DefaultEndpointsProtocol=https;AccountName=applications01;AccountKey=/438OkgH9PgmzEw6jN1mWu5qcnyqxl/JXYP+YvFIVz5LKqBzxGWg4l4H1/TIOoMg2Niv/vCIPz8s+ASt8CZzFg==;EndpointSuffix=core.windows.net",
+    "applicationsdb_DOCUMENTDB": "UseDevelopmentStorage=true",
+    "applications01_STORAGE": "UseDevelopmentStorage=true",
+    "registry_STORAGE": "UseDevelopmentStorage=true"
+  }
+}

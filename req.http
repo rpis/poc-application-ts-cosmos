@@ -1,0 +1,53 @@
+#@baseUrl = http://localhost:3000
+
+#@baseUrl=https://applications-nest-func.azurewebsites.net/api
+
+#@baseUrl = http://localhost:7071/api
+
+#santa
+@baseUrl = https://spls1neuafagenerigene003.azurewebsites.net/api
+
+@keycloakUrl = https://keycloak.xiteo.pl
+
+# @name login
+post {{keycloakUrl}}/auth/realms/rafal/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password
+&client_id=backend
+&client_secret=R58BfVEZjgFmvvfZzbkwVSkuFQRHs3yo
+&username=test
+&password=test
+
+###
+@authToken = {{login.response.body.access_token}}
+get {{baseUrl}}/applications
+content-type: application/json
+authorization: Bearer {{authToken}}
+
+###
+@authToken = {{login.response.body.access_token}}
+post {{baseUrl}}/application
+content-type: application/json
+authorization: Bearer {{authToken}}
+
+{
+"caseType": 1,
+"purpose": 10,
+"amount": 999.99,
+"customer" :{
+    "cif": "10000002",
+    "firstName" : "Aleksander",
+    "lastName" :"Iksinski",
+    "pesel": "90909090908"
+}
+}
+
+###
+post {{baseUrl}}/applications/test2
+content-type: application/json
+
+{
+
+}
+

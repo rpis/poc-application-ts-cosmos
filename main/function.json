@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "{*segments}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "starter",
+      "type": "orchestrationClient",
+      "direction": "in"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "internalQueue",
+      "queueName": "out",
+      "connection": "applications01_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/main/index.js",
+  "entryPoint": "run"
+}

@@ -1,0 +1,11 @@
+echo "$( jq '."scriptFile" = "../dist/checkcustomer.js"' ./check-customer/function.json)" > ./check-customer/function.json
+echo "$( jq '."scriptFile" = "../dist/businessprocess.js"' ./business-process/function.json)" > ./business-process/function.json
+echo "$( jq '."scriptFile" = "../dist/businessprocessstart.js"' ./business-process-start/function.json)" > ./business-process-start/function.json
+echo "$( jq '."scriptFile" = "../dist/finalize.js"' ./finalize/function.json)" > ./finalize/function.json
+echo "$( jq '."scriptFile" = "../dist/getaccountno.js"' ./get-account-no/function.json)" > ./get-account-no/function.json
+echo "$( jq '."scriptFile" = "../dist/internalqueue.js"' ./internal-queue/function.json)" > ./internal-queue/function.json
+echo "$( jq '."scriptFile" = "../dist/main.js"' ./main/function.json)" > ./main/function.json
+echo "$( jq '."scriptFile" = "../dist/marksendtodecision.js"' ./mark-send-to-decision/function.json)" > ./mark-send-to-decision/function.json
+echo "$( jq '."scriptFile" = "../dist/processid.js"' ./process-id/function.json)" > ./process-id/function.json
+echo "$( jq '."scriptFile" = "../dist/reject.js"' ./reject/function.json)" > ./reject/function.json
+echo "$( jq '."scriptFile" = "../dist/rejectcustomerstatus.js"' ./reject-customer-status/function.json)" > ./reject-customer-status/function.json

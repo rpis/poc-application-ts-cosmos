@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "type": "activityTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "internalQueue",
+      "queueName": "out",
+      "connection": "applications01_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/process-id/index.js"
+}

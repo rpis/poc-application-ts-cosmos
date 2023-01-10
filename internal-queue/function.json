@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "appl",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "out",
+      "connection": "applications01_STORAGE"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "outputQueueItem",
+      "queueName": "out-queue",
+      "connection": "registry_STORAGE"
+    }
+  ],
+  "scriptFile": "../dist/internal-queue/index.js"
+}
