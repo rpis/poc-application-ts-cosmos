@@ -1,3 +1,4 @@
+/*
 import { string } from 'joi';
 import * as mongoose from 'mongoose';
 
@@ -19,3 +20,5 @@ export const ApplicationSchema = new mongoose.Schema({
   finalizationDate: Date,
   customers: [CustomerSchema],
 });
+
+*/

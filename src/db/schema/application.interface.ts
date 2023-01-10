@@ -1,13 +1,11 @@
-import { Document } from 'mongoose';
-
-export interface Customer extends Document {
+export interface Customer {
   cif: Number;
   firstName: String;
   lastName: String;
   pesel: String;
 }
 
-export interface Application extends Document {
+export interface Application {
   type: Number;
   amount: Number;
   customers: Customer[];

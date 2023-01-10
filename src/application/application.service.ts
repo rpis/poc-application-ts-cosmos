@@ -1,9 +1,7 @@
 import { CaseDto } from './dto/case.dto';
-import mongoose, { Model } from 'mongoose';
 import { Application } from '../db/schema/application.interface';
 import * as df from 'durable-functions';
 import { Context } from '@azure/functions';
-import { ApplicationSchema } from '../db/schema/application.schema';
 import axios, { Axios } from 'axios';
 import { logger } from '../utils/logging-utils';
 require('dotenv').config();

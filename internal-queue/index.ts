@@ -3,10 +3,10 @@ import { Application } from 'src/db/schema/application.interface';
 
 const queueTrigger: AzureFunction = async function (
   context: Context,
-  appl: Application,
+  appl: any,
 ): Promise<void> {
   const out: any = {
-    caseId: appl._id,
+    caseId: appl.id,
     caseType: 'DPPL1',
     amount: appl.amount,
     status: appl.status,
